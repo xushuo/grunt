@@ -118,7 +118,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
     // 定义默认任务
-    grunt.registerTask('default', ['csslint', 'jshint', 'imagemin', 'cssmin', 'concat', 'uglify']);
+    grunt.registerTask('default', ['csslint', 'jshint', 'imagemin',  'concat', 'cssmin','uglify']);
     grunt.registerTask('css', ['concat:css', 'cssmin']);
     grunt.registerTask('dev', ['csslint', 'jshint']);
     grunt.registerTask('dest', ['imagemin', 'concat:css', 'cssmin', 'uglify:minjs']);
